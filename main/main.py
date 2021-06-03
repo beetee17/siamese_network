@@ -88,6 +88,7 @@ if __name__ == '__main__':
         elif load == 'n':
 
             # train a new model from scratch
+            # refer to Utils/buildModel.py to tweak the architecture (e.g. adding more pretrained model options)
 
             while True:
 
