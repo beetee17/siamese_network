@@ -1,6 +1,6 @@
 This repo contains the code used to train a few shot model on the Fine-Grained Visual Classification (FGVC) of Aircraft dataset. It also contains code of a simple web-service that can be used to demonstrate a model's prediction results with user uploaded images, as well as code to containerise the web-service into a Docker image.
 
-A sample model may be found in the docker\app folder; the file is named *model.h5*. This model was created by fine-tuning the VGG16 pretrained model on the FGVC aircraft dataset.
+A sample model may be downloaded from https://www.dropbox.com/s/v6r3ldxpcipmijq/model.h5?dl=0. It can also be found in the development machine. This model was created by fine-tuning the VGG16 pretrained model on the FGVC aircraft dataset.
 
 # Environments
 The codebase was developed with Python 3.9.
@@ -35,6 +35,7 @@ python path\to\main\main.py
 ```
 
 *main.py* is an interactive script, so follow the onscreen instructions to either create a new model, train an existing model, or evaluate it on various one-shot tasks!
+If you would like to modify the architecture of the siamese network, for example, to add your own pretrained model as the embedding layer, refer to Utils/buildModel.py
 
 # Inference
 In the command prompt, run the follownig:
